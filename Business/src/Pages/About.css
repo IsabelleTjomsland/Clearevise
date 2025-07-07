@@ -1,0 +1,282 @@
+/* Apply global styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth; /* Add smooth scrolling */
+}
+
+/* Style the header */
+.header {
+    position: relative;
+    background-image: url('/a.jpg');  /* Reference the image from the public folder */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;  /* Adjust the height as needed */
+    color: rgb(0, 0, 0);
+    text-align: center;
+    transition: background-position 0.3s ease; /* Optional smooth transition for background */
+}
+
+/* Dark overlay that fits the image */
+.header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;  /* Make the overlay fit the header image */
+    background-color: rgba(255, 255, 255, 0.952); /* Dark overlay */
+    display: flex;
+    flex-direction: column;  /* Align text in a column (h1 above p) */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 20px;  /* Add padding for spacing */
+}
+
+/* Prefix text */
+.prefix {
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    margin-bottom: 1rem;
+    margin-top: 4rem;
+    position: relative; /* Viktigt! Så den hamnar framför overlay */
+    z-index: 2; /* Högre än overlay */
+}
+
+/* Header Title */
+h1 {
+    font-size: 3.8rem;
+    margin: 10px;
+    margin-top: 0rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+    background: linear-gradient(90deg, #021c39, #295588);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0; /* Initial opacity for animation */
+    transform: translateY(20px); /* Initial position for animation */
+    animation: fadeInUp 1s ease-out forwards; /* Apply fade-in animation */
+    animation-delay: 0.3s; /* Delay the header text animation */
+}
+
+/* Paragraph text */
+p {
+    font-size: 1.2rem;
+    margin: 0;
+    opacity: 0; /* Initial opacity for animation */
+    transform: translateY(20px); /* Initial position for animation */
+    animation: fadeInUp 1s ease-out forwards; /* Apply fade-in animation */
+    animation-delay: 0.6s; /* Delay the paragraph text animation */
+}
+
+/* Staggered fade-in animation */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Our story section */
+.our-story .img {
+    width: 100%;
+    height: 50;
+    object-fit: cover;
+    object-position: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* New Section Styles */
+.our-story {
+    padding: 60px 20px;  /* Increase padding for a more spacious layout */
+    background-color: #ffffff;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+/* Brush image */
+.brush-img {
+    width: 50%; /* Adjust size as needed */
+    max-width: 300px; /* Limit max width */
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+/* Our story header and text */
+.our-story h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    max-width: 700px;
+    margin-left: 15rem;
+    opacity: 0; /* Initial opacity for animation */
+    transform: translateY(20px); /* Initial position for animation */
+    animation: fadeInUp 1s ease-out forwards;
+    animation-delay: 1s; /* Stagger delay for the story header */
+}
+
+.our-story p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 700px;
+    text-align: left;
+    margin: 0 auto;
+    color: #333;
+    margin-bottom: 1rem;
+    opacity: 0; /* Initial opacity for animation */
+    transform: translateY(20px); /* Initial position for animation */
+    animation: fadeInUp 1s ease-out forwards;
+    animation-delay: 1.3s; /* Stagger delay for the story paragraph */
+}
+
+/* Expert Section Styles */
+.Experterna {
+    text-align: center;
+}
+
+.Experterna h1 {
+    font-size: 1.5rem;
+    font-weight: 200;
+    margin: 0;
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+}
+
+.Experterna h3 {
+    margin-bottom: 1.2rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: -5rem;
+}
+
+.Experterna p {
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    color: #000000;
+}
+
+.expert-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Adjust spacing between expert-boxes */
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    margin-top: 1rem;
+}
+
+.expert-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20rem;
+}
+
+.expert-box img {
+    width: 300px; /* Adjust size as needed */
+    padding: 7rem;
+    height: auto;
+    margin-bottom: 0rem;
+    border-radius: 50%;
+}
+
+/* New style for scaling the image */
+.expert-img {
+    width: 300px; /* Image size */
+    height: auto;
+    border-radius: 50%;
+    transition: transform 0.5s ease; /* Smooth transition for scaling */
+}
+
+.scale-up {
+    transform: scale(1.1); /* Scale the image by 10% */
+}
+
+/* Mobile version adjustments using media queries */
+@media only screen and (max-width: 768px) {
+    .header {
+        height: 60vh;  /* Reduce header height on smaller screens */
+    }
+
+    h1 {
+        font-size: 2.5rem;  /* Smaller text size for h1 on mobile */
+    }
+
+    p {
+        font-size: 1rem; /* Adjust paragraph font size for mobile */
+    }
+
+    .prefix {
+        font-size: 0.9rem; /* Smaller prefix text */
+    }
+
+    .our-story {
+        padding: 40px 20px; /* Adjust padding for mobile */
+    }
+
+    .our-story h1 {
+        font-size: 1.5rem;  /* Smaller font size for h1 in our-story */
+        margin-left: 0; /* Remove left margin for smaller screens */
+        margin-bottom: 10px; /* Adjust bottom margin */
+    }
+
+    .our-story p {
+        font-size: 1rem; /* Adjust paragraph font size */
+    }
+
+    .brush-img {
+        width: 70%; /* Adjust brush image size */
+        max-width: 200px; /* Smaller max-width */
+    }
+
+    .expert-container {
+        gap: 15px;  /* Reduce gap between experts */
+    }
+
+    .expert-box {
+        margin-bottom: 2rem;  /* Reduce bottom margin */
+    }
+
+    .expert-box img {
+        width: 180px; /* Reduce image size */
+        padding: 4rem;  /* Adjust padding for mobile */
+        margin-bottom: 4rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem; /* Even smaller h1 on extra small screens */
+    }
+
+    .prefix {
+        font-size: 0.8rem; /* Even smaller prefix */
+    }
+
+    p {
+        font-size: 0.9rem; /* Adjust paragraph font size */
+    }
+
+    .our-story h1 {
+        font-size: 1.2rem; /* Smaller h1 in our-story */
+    }
+
+    .our-story p {
+        font-size: 0.9rem; /* Adjust paragraph font size */
+    }
+
+    .brush-img {
+        width: 80%;  /* Further reduce brush image size */
+        max-width: 100px; /* Even smaller max-width */
+        margin: 0 auto 20px;
+    }
+}

@@ -1,0 +1,142 @@
+.header-container {
+    position: relative;
+    padding: 6rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    transform: translateX(0); /* Reset the horizontal shift */
+}
+
+/* Header Content */
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 100%;
+    width: 100%;
+    margin: 2rem 0;
+}
+
+/* Text Section */
+.white-header-text {
+    max-width: 500px; /* Restrict width of text */
+    color: white !important;
+    word-wrap: break-word; /* Ensure text breaks on long words */
+    padding: 0 1rem; /* Add padding to avoid text touching edges */
+}
+
+.white-header-text h5 {
+    font-size: 3rem;
+    max-width: 550px;
+    font-weight: 600;
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+    opacity: 0; /* Ensure opacity animation works */
+    transform: translateY(20px); /* Ensure slide-up effect */
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out; /* Add transition for smoothness */
+    color: white; /* Make h1 text white */
+    word-wrap: break-word; /* Break words if necessary */
+    hyphens: auto; /* Enable automatic hyphenation for better wrapping */
+}
+
+.white-header-text p {
+    margin-bottom: 3rem;
+    opacity: 0; /* Ensure opacity animation works */
+    transform: translateY(20px); /* Ensure slide-up effect */
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out; /* Add transition for smoothness */
+    color: white; /* Make p text white */
+    word-wrap: break-word; /* Break words if necessary */
+    hyphens: auto; /* Enable automatic hyphenation for better wrapping */
+}
+
+.cta-button {
+    background-color: #007bff;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    opacity: 0; /* Ensure opacity animation works */
+    transform: translateY(20px); /* Ensure slide-up effect */
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out; /* Add transition for smoothness */
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+/* Image Section */
+.header-image {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 2rem;
+    transform: translateX(0); /* Reset the horizontal shift */
+}
+
+.header-image img {
+    max-width: 100%;
+    width: 450px; /* Adjust the image width as needed */
+    height: auto;
+    opacity: 0;
+    transform: translateX(50px); /* Slide-in effect */
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out; /* Add transition for smoothness */
+}
+
+/* Responsive Adjustments */
+@media (min-width: 768px) {
+    .header-content {
+        flex-direction: row;
+        text-align: left;
+        align-items: center;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        padding: 3rem 1rem; /* Adjust padding for mobile */
+    }
+
+    .header-content {
+        align-items: center; /* Center the content for mobile */
+    }
+
+    .white-header-text {
+        max-width: 504px; /* Ensure text container is full width */
+        width: 100%;
+        text-align: left; 
+        padding: 0 1rem; /* Add padding to prevent text touching edges */
+        
+        margin-right: 2rem; 
+        margin-top: 2rem;
+    }
+
+    .white-header-text h5 {
+        font-size: 2.2rem; /* Adjust header size for smaller screens */
+        word-wrap: break-word; /* Ensure header text breaks properly */
+        hyphens: auto; /* Enable automatic hyphenation */
+    }
+
+    .white-header-text p {
+        font-size: 1rem;
+        max-width: 500px;
+        width: 100%; /* Adjust paragraph size for smaller screens */
+        word-wrap: break-word; /* Ensure paragraph text breaks properly */
+        hyphens: auto; /* Enable automatic hyphenation */
+    }
+
+    .cta-button {
+        font-size: 1rem; /* Adjust button size for mobile */
+        padding: 0.6rem 1.2rem; /* Adjust padding for mobile */
+    }
+
+    .header-image img {
+        width: 100%; /* Make image responsive */
+    }
+}

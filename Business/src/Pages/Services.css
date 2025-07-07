@@ -1,0 +1,209 @@
+/* Define the animation for the text */
+@keyframes scrollMove {
+    0% {
+        opacity: 0;
+        transform: translateY(50px); /* Start below */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* End at the normal position */
+    }
+}
+
+/* Apply the animation to the text */
+.scroll-animate {
+    animation: scrollMove 1s ease-out forwards;
+}
+
+/* General container for the page */
+.services-container {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding-bottom: 200px;
+    background-color: #fcfcfc;
+}
+
+/* Header section styling */
+.services-header {
+    position: relative;
+    background-image: url('/pc.png');
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.services-header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.863);
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Prefix "Tjänster" styling */
+.services-header .prefix {
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    margin-bottom: 10px;
+    z-index: 2;
+}
+
+/* Main header text styling */
+.services-header h1 {
+    font-size: 4rem;
+    font-weight: 600;
+    margin: 0;
+    padding: 10px;
+    
+    z-index: 2;
+    background: linear-gradient(90deg, #000000, #125782);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.services-header p {
+    font-size: 1.2rem;
+    font-weight: 100;
+    color: rgb(43, 42, 42);
+    z-index: 2;
+    margin-top: 1rem;
+}
+
+/* Intro section */
+.intro-section {
+    text-align: center;
+    padding: 20px;
+    background-color: #fcfcfc;
+    margin-bottom: 30px;
+}
+
+.intro-section h1 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-top: 4rem;
+    text-align: center;
+    background: linear-gradient(90deg, #021c39, #5797e0);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.intro-section p {
+    font-size: 1rem;
+    text-align: center;
+    color: #474747;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Background for the service cards */
+.services-background {
+    position: relative;
+    background-image: url('/na.png');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    margin-top: 50px;
+}
+
+/* Flex container for service cards */
+.services-cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Individual service card styling */
+.service-card {
+    background: rgb(255, 255, 255);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 350px;
+    transition: transform 0.3s;
+    margin-bottom: 30px;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.service-card img {
+    width: 130px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.service-card h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+.service-card p {
+    font-size: 1rem;
+    color: #000000;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .services-header {
+        height: 300px;
+    }
+    .services-header h1 {
+        font-size: 2.5rem;
+    }
+    .services-header p {
+        font-size: 1rem;
+    }
+    .intro-section h1 {
+        font-size: 1.8rem;
+    }
+    .intro-section p {
+        font-size: 1rem;
+    }
+    .service-card {
+        max-width: 100%;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .services-header {
+        height: 250px;
+        padding: 15px;
+    }
+    .services-header h1 {
+        font-size: 2rem;
+    }
+    .services-header p {
+        font-size: 0.9rem;
+    }
+    .intro-section h1 {
+        font-size: 1.5rem;
+    }
+    .intro-section p {
+        font-size: 0.9rem;
+    }
+}

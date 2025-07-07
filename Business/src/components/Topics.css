@@ -1,0 +1,55 @@
+/* Topics Container */
+.topics-container {
+    position: relative;
+    background-color: white; /* Background color */
+    padding: 4rem 2rem; /* Padding */
+    display: flex; /* Flexbox for layout */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center align items */
+    width: 100%; /* Full width */
+  }
+  
+  /* Content Area */
+  .topics-content {
+    display: flex; /* Flexbox for content layout */
+    flex-direction: column; /* Stack text and image vertically */
+    align-items: center; /* Center align items */
+    text-align: center; /* Center text */
+    max-width: 1200px; /* Max width for content */
+    width: 100%; /* Full width */
+    margin: 0 auto; /* Center the content */
+  }
+  
+  /* Text Area */
+  .topics-text {
+    flex: 1; /* Allow the text area to grow */
+    max-width: 600px; /* Max width for the text */
+  }
+  
+  /* Headings */
+  .topics-text h2 {
+    color: #000; /* Heading color */
+    font-size: 2rem; /* Font size */
+    font-weight: bold; /* Font weight */
+    margin-bottom: 1rem; /* Bottom margin */
+  }
+  
+  /* Paragraph Text */
+  .topics-text p {
+    color: #2c2c2c; /* Paragraph color */
+    margin-bottom: 1.5rem; /* Bottom margin */
+  }
+  
+  /* Image Container */
+  .topics-image {
+    display: flex; /* Flex for image positioning */
+    justify-content: center; /* Center the image */
+    margin-top: 2rem; /* Top margin for spacing */
+  }
+  
+  /* Image */
+  .topics-image img {
+    width: 300px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+  }
+  

@@ -1,0 +1,140 @@
+.footer {
+  background-color: #0a0a18;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  gap: 15px;
+}
+
+.footer-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  margin-left: 48rem;
+  transition: background-color 0.3s;
+}
+
+.footer-button:hover {
+  background-color: #0056b3;
+}
+
+.tryfree-button {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: background-color 0.3s;
+}
+
+.tryfree-button:hover {
+  background-color: #dcdee0;
+}
+.Kom-igång {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #fff;
+  font-weight:100;
+}
+
+.Kom-igång p {
+  margin-bottom: 0;
+  font-weight: 400;
+  font-size: 1.9rem;
+  color: #ffffff;
+  margin-right: 32rem;
+  margin-bottom: 4rem;
+  margin-top: -4rem;
+}
+
+
+
+.footer-logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 20px;
+  margin-top: 1rem;
+}
+
+.footer-logo img {
+  width: 65px;
+  height: auto;
+  margin-left: 2rem;
+  margin-top: -6rem;
+}
+
+
+/* Styling for the follow-us text */
+.follow-us {
+  margin-top: 10px; /* Adds some spacing between the logo and the text */
+  font-size: 16px;  /* Adjust the font size as needed */
+  color: #fff; /* Set the text color */
+}
+
+.follow-us p {
+  margin-bottom: 0; /* Remove the default bottom margin */
+  font-size: 16px;  /* Set the font size for the <p> tag */
+  color: #b3b3b3; /* Light gray color for the text */
+  margin-left: -4.5rem; /* Remove any left margin that might be shifting the text */
+}
+/* LinkedIn logo positioning */
+/* LinkedIn logo positioning */
+/* LinkedIn logo hover effect */
+/* LinkedIn logo positioning */
+.linkedin-logo {
+  margin-top: 10px; 
+  width: 20px;
+  height: auto;
+  display: inline-block;
+  margin-left: 0;
+  margin-right: auto;
+  align-self: flex-start;
+  transition: filter 0.3s ease;  /* Smooth transition for icon color change */
+}
+
+.linkedin-logo img {
+  width: 40px;  /* Adjust width as needed */
+  height: auto;
+  margin-top: 8rem;
+  margin-left: -6rem;
+  transition: filter 0.3s ease;  /* Smooth transition for icon color change */
+}
+
+/* Hover effect to make the logo lighter */
+.linkedin-logo:hover img {
+  filter: brightness(1.2) saturate(1.5) hue-rotate(190deg);  /* Apply a light blue effect */
+}
+
+.footer-bottom {
+  margin-top: 20px;
+}
+
+.footer-bottom p {
+  font-size: 18px;
+  margin-top: 4rem;
+  margin-bottom: 20px;
+  color:#b3b3b3;
+}
+
+.footer-links a {
+  color: #b3b3b3;
+  margin: 0 15px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}

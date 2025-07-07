@@ -1,0 +1,50 @@
+.language-dropdown {
+    position: relative;
+    margin-right: 1rem;
+}
+
+.language-toggle {
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.language-toggle:hover {
+    text-shadow: 0 0 5px #87CEFA, 0 0 10px #87CEFA;
+}
+
+.language-menu {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    background-color: #f8eeee;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    z-index: 100;
+    padding: 0.5rem 0;
+    width: 150px;
+    list-style: none; /* Removes the bullet points */
+    margin: 0; /* Removes any default margin */
+    padding-left: 0; /* Ensures no padding is added for bullets */
+}
+
+.language-menu li {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    color: #0a0a18;
+    transition: background-color 0.2s ease;
+}
+
+.language-menu li:hover {
+    background-color: #d9e6f0;
+}
+
+.language-menu li.active {
+    color: #035fa6;
+    font-weight: bold;
+}

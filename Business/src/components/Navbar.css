@@ -1,0 +1,94 @@
+/* Navbar */
+.navbar {
+    background-color: #0a0a18;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Logo */
+.logo {
+    height: 46px;
+    cursor: pointer;
+    margin-right: 3rem;
+    margin-left: 2.5rem;
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    gap: 4rem;
+    margin-left: 5rem;
+}
+
+/* Navigation Links */
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+/* Glowing Effect on Hover */
+.nav-links a:hover {
+    color: #d6e8f3; /* Lighter Blue Color */
+    text-shadow: 0 0 10px #87CEFA, 0 0 20px #87CEFA, 0 0 30px #87CEFA;
+}
+
+/* Call-to-action button */
+.cta-button-nav {
+    background-color: #007bff;
+    color: rgb(255, 255, 255);
+    padding: 10px 15px;
+    font-size: 1.1rem;
+    
+    border-radius: 30px;
+    cursor: pointer;
+    margin-left: 6rem; /* Ensures button is on the left */
+}
+.cta-button-nav:hover {
+    background-color: #0056b3;
+}
+
+/* Hamburger Menu Icon */
+.menu-icon {
+    display: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hide by default */
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        background-color: #0a0a18;
+        width: 100%;
+        text-align: center;
+        padding: 1rem 0;
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .cta-button-nav {
+        display: none; /* Hide the button on mobile */
+    }
+}

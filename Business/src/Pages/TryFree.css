@@ -1,0 +1,277 @@
+/* Reset margin and padding for body and html */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* Container for the entire contact section */
+.tryfree-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 3rem; /* Added margin to move the section down */
+    margin-bottom: 1rem;
+}
+
+/* Header styles with background image */
+.tryfree-header {
+    text-align: center;
+    font-size: 100;
+    margin-bottom: 4rem;
+    margin-top: 0;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    width: 100vw;
+    padding: 2rem 10%;
+    height: 65vh;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+/* Overlay for readability */
+.tryfree-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 55vh;
+    background-color: #0a0a18;
+    z-index: 0;
+}
+
+.tryfree-header .prefix {
+    font-size: 1rem;
+    font-weight: 100;
+    color: #cecccc;
+    margin-bottom: 1.2rem;
+    margin-top: 3rem;
+    position: relative; /* Important! So it appears in front of the overlay */
+    z-index: 2; /* Higher than the overlay */
+}
+
+
+.tryfree-header h1 {
+    font-size: 3.8rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    z-index: 1;
+
+    background: linear-gradient(90deg, #a6cbf6, #ffffff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.tryfree-header p {
+    font-size: 1.3rem;
+    color:#e6e3e3;
+    z-index: 1;
+    margin-bottom: 0rem;
+    margin-top:-4rem;
+}
+
+/* Stil för "Kom i kontakt med oss!" och beskrivningen under */
+.tryfree-info {
+    margin-bottom: 1.5rem; /* Minska avståndet nedåt */
+    text-align: center;
+}
+
+.tryfree-info h1 {
+    margin-top: 0rem;
+    margin-left: -32rem; /* Minska avståndet till vänster */
+    font-size: 2.1rem; /* Minska storleken på rubriken */
+    margin-bottom: 1rem; /* Minska avståndet under rubriken */
+}
+
+.tryfree-info p {
+    margin-left: -28.1rem; /* Minska avståndet till vänster */
+    text-align: left;
+    font-size: 1rem; /* Minska storleken på beskrivningen */
+    line-height: 1.4; /* Kompaktare radavstånd */
+    color: #333; /* Gör färgen lite mjukare om du vill */
+}
+
+/* Ensure text is above the overlay */
+.tryfree-header h1, .contact-header p {
+    position: relative;
+    z-index: 1;
+}
+
+/* Styles for error messages */
+.error-message {
+    color: #e63946;
+    font-size: 0.8rem;
+    margin-top: 0.3rem;
+    display: none; /* Hide by default */
+}
+
+/* Show error message when input is invalid and touched */
+input.invalid + .error-message,
+textarea.invalid + .error-message {
+    display: block;
+}
+
+/* Make name fields appear side by side */
+.name-fields {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.name-field {
+    flex: 1;
+}
+
+/* Increase spacing between contact info and form */
+.tryfree-info {
+    margin-bottom: 4rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+/* Form styles */
+.tryfree-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    width: 900px;
+    align-items: flex-start;
+    margin-top: 2rem;
+    margin-bottom: 10rem;
+}
+
+.tryfree-form label {
+    font-weight: bold;
+    color: #333;
+}
+
+.tryfree-form input,
+.tryfree-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.tryfree-form input:focus,
+.tryfree-form textarea:focus {
+    outline: none;
+    border-color: #66b2ff;
+}
+
+/* Checkbox container */
+.consent-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.consent-container input[type="checkbox"] {
+    margin-top: 3px;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.consent-container label {
+    font-size: 0.9rem;
+    color: #333;
+    line-height: 1.4;
+    cursor: pointer;
+}
+
+/* Submit button */
+.submit-button {
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.05rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+/* Media Queries for mobile responsiveness */
+@media (max-width: 768px) {
+    /* Adjust layout of name fields to be stacked on smaller screens */
+    .name-fields {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .tryfree-header {
+        padding: 3rem 5%;
+        background-position: center top;
+        width: 100vw;
+        height: auto;
+        min-height: 200px; /* Ensure a reasonable height for the header */
+    }
+
+    .tryfree-header h1 {
+        font-size: 2rem;
+    }
+
+    .tryfree-header p {
+        font-size: 1rem;
+    }
+
+    /* Adjust contact info styling */
+    .tryfree-info {
+        width: 90%;
+        padding: 0.5rem;
+    }
+
+    .tryfree-info h1 {
+        margin-left: 0;
+    }
+    .tryfree-info p {
+        margin-left: 0;
+    }
+    
+
+    /* Contact form width and layout adjustment */
+    .tryfree-form {
+        width: 100%;
+        padding: 0 1rem;
+        margin-top: 1rem;
+        align-items: stretch;
+    }
+
+    /* Adjust form input field sizes */
+    .tryfree-form input,
+    .tryfree-form textarea {
+        font-size: 0.9rem;
+    }
+
+    /* Adjust button size for mobile */
+    .submit-button {
+        padding: 0.6rem;
+        font-size: 1rem;
+    }
+
+    /* Adjust checkbox size */
+    .consent-container input[type="checkbox"] {
+        width: 20px;
+        height: 20px;
+    }
+}

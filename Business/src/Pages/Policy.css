@@ -1,0 +1,86 @@
+.policy-container {
+    max-width: 900px;
+    width: 90%; /* Adjust width to fit smaller screens */
+    margin: 40px auto; /* Center content with a smaller margin */
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.policy-title {
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.policy-section {
+    margin-top: 25px;
+}
+
+.policy-section h2 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.policy-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+.policy-contact a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.policy-contact a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile responsiveness */
+@media only screen and (max-width: 768px) {
+    .policy-container {
+        width: 95%; /* Use more screen space */
+        padding: 20px;
+        margin: 30px auto;
+    }
+
+    .policy-title {
+        font-size: 2rem;
+        margin-top: 2rem;
+    }
+
+    .policy-section h2 {
+        font-size: 1.4rem;
+    }
+
+    .policy-text {
+        font-size: 0.95rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .policy-container {
+        width: 100%; /* Full width on small screens */
+        padding: 15px;
+        margin: 20px auto;
+        border-radius: 5px; /* Slightly reduced border-radius */
+    }
+
+    .policy-title {
+        font-size: 1.8rem;
+        margin-top: 1.5rem;
+    }
+
+    .policy-section h2 {
+        font-size: 1.2rem;
+    }
+
+    .policy-text {
+        font-size: 0.9rem;
+    }
+}

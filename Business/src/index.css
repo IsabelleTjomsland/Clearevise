@@ -1,0 +1,38 @@
+/* Topics container styles */
+.topics-container {
+    position: relative;
+    background-color: white;
+    padding: 64px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Topics content */
+.topics-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 768px; /* Equivalent to max-w-3xl */
+    margin: 0 auto;
+}
+
+/* Heading styles */
+.topics-text h2 {
+    font-size: 20px; /* Equivalent to text-2xl */
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.topics-text p {
+    color: #6b7280; /* Equivalent to text-gray-600 */
+    margin-bottom: 16px;
+}
+
+/* Image styles */
+.topics-image img {
+    width: 256px; /* Equivalent to w-64 */
+    height: auto;
+    margin-top: 16px;
+}
