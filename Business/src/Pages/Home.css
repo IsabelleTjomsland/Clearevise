@@ -6,11 +6,12 @@ body, html {
     padding: 0;
     font-family: Arial, sans-serif;
 }
+
 .page-container {
     position: relative;
     width: 100%;
-    min-height: 100vh; /* Full screen height */
-    overflow: hidden; /* Prevent any content from overflowing */
+    min-height: 100vh;
+    overflow: hidden;
 }
 
 /* Full-Page Background Video */
@@ -20,10 +21,10 @@ body, html {
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensure video covers full screen */
+    object-fit: cover;
     object-position: center;
-    pointer-events: none; /* Disable interaction with video */
-    z-index: -1; /* Video stays behind all content */
+    pointer-events: none;
+    z-index: -1;
 }
 
 .video-overlay {
@@ -32,7 +33,7 @@ body, html {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1; /* Overlay stays above video but behind content */
+    z-index: -1;
 }
 
 /* Home Container */
@@ -40,15 +41,14 @@ body, html {
     position: relative;
     width: 100%;
     padding: 2rem;
-    z-index: 1; /* Ensure content is above the video */
+    z-index: 1;
     color: white;
     text-align: center;
-    padding-top: 4rem; /* Add padding to push content down */
+    padding-top: 4rem;
 }
 
-/* Header styling */
 .home-content {
-    z-index: 1; /* Ensures header stays above the video */
+    z-index: 1;
 }
 
 /* Topics Section */
@@ -59,14 +59,12 @@ body, html {
     display: flex;
     justify-content: center;
     width: 100%;
-    margin-top: 6rem; /* Increase margin-top to push the entire section further down */
-    
+    margin-top: 6rem;
 }
-
 
 .topics-content {
     display: flex;
-    flex-direction: row; /* Align items in a row: text left, images right */
+    flex-direction: row;
     align-items: center;
     text-align: left;
     max-width: 1200px;
@@ -75,19 +73,16 @@ body, html {
 }
 
 .topics-text h1 {
-    flex: 2; /* Make text section wider than images */
-    font-size: 2.5rem; /* Increase font size */
+    flex: 2;
+    font-size: 2.5rem;
     max-width: 800px;
-    margin-right: 2rem; /* Add space between text and images */
-    margin-top: 3rem; /* Increase margin-top to move text down */
+    margin-right: 2rem;
+    margin-top: 3rem;
     margin-bottom: 2rem;
-  
     background: linear-gradient(90deg, #01122d, #005d96);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
- 
-
 }
 
 .topics-text p {
@@ -100,57 +95,62 @@ body, html {
 .topics-image {
     flex: 1;
     display: flex;
-    flex-direction: row; /* Align images side by side */
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-top: 8rem;
+    margin-top: 5rem;
     margin-bottom: 0;
     width: 200%;
-    background-color: rgb(0, 0, 21); /* Add navy blue background */
-    padding: 2rem; /* Add some padding around the images */
-    border-radius: 10px; /* Optional: Add rounded corners */
+    background-color: rgb(0, 0, 21);
+    padding: 2rem;
+    border-radius: 10px;
 }
-
 
 .topics-image .image-wrapper {
     display: flex;
-    flex-direction: column; /* Stack image and name vertically */
-    align-items: center; /* Center the name under the image */
-    margin-bottom: 0rem; /* Add space between image and name */
-    margin-top: 1rem; /* Add space between image and text */
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0rem;
+    margin-top: 1rem;
     max-width: 100%;
 }
 
 .topics-image img {
-    width: 400px; /* Adjust image size if needed */
+    width: 800px;
     height: auto;
-    margin-bottom: 0; /* Space between images */
+    margin-bottom: 0;
 }
+.topics-image .larger-image {
+    width: 350px;
+    height: auto;
+    margin-right: -20rem;
+    max-width: 100%;
+    margin-bottom: 0;
+}
+
 
 /* Name Box Styling */
 .topics-image .name-box {
-    color: rgb(255, 255, 255); /* Text color */
+    color: rgb(255, 255, 255);
     padding: 2rem;
-    margin-top: 2rem; /* Space between image and text box */
-    font-size: 1rem; /* Adjust text size */
-    text-align: center; /* Center the name */
-    width: 350px; /* Set a fixed width */
+    margin-top: 2rem;
+    font-size: 1rem;
+    text-align: center;
+    width: 350px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; /* Center content vertically */
+    justify-content: center;
 }
 
-/* Style for the name */
 .topics-image .name-box h3 {
-    font-size: 1.4rem; /* Header font size */
-    margin: 0; /* Remove default margin */
+    font-size: 1.5rem;
+    margin: 0;
 }
 
-/* Style for the description */
 .topics-image .name-box p {
-    font-size: 1rem; /* Text font size */
-    margin-top: 0.5rem; /* Add space between the header and the text */
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
 }
 
 /* Experience Section */
@@ -160,8 +160,8 @@ body, html {
 }
 
 .experience-container h2 {
-    font-size: 4rem; /* Adjust font size */
-    color: #ffffffd8; /* Customize color */
+    font-size: 4rem;
+    color: #ffffffd8;
     margin-bottom: 0.5rem;
 }
 
@@ -170,10 +170,6 @@ body, html {
     color: #ffffff;
     margin-top: 0rem;
 }
-
-
-    
-    /* Service Section */
 
 /* Services Intro Section */
 .services-intro {
@@ -191,22 +187,16 @@ body, html {
 }
 
 .services-intro p {
-    font-size: 1.4 rem;
+    font-size: 1.4rem;
     color: #585858;
     margin-bottom: 0rem;
 }
-
-
-    
-
 
 /* Services Section */
 .services-section {
     padding: 4rem 2rem;
     background-color: #ffffff;
     text-align: center;
-    
-  
 }
 
 .services-boxes {
@@ -218,7 +208,6 @@ body, html {
     margin-top: 2rem;
 }
 
-
 .service-box {
     background-color: #0a0a18;
     padding: 2rem;
@@ -226,19 +215,18 @@ body, html {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     max-width: 300px;
     transition: transform 0.3s ease;
-    
 }
 
 .service-box:hover {
     transform: translateY(-5px);
 }
+
 .service-box prefix {
     color: #ebe4e4;
     font-size: 2.5rem;
     font-weight: 100;
     margin-top: 0rem;
 }
-
 
 .service-box h3 {
     font-size: 2.5rem;
@@ -251,8 +239,9 @@ body, html {
 .service-box p {
     font-size: 1rem;
     color: #e4e2e2;
-    margin-top: 1rem;;
+    margin-top: 1rem;
 }
+
 .service-box img {
     width: 300px;
     height: 200px;
@@ -263,65 +252,65 @@ body, html {
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
     .home-container {
-        padding-top: 2rem; /* Reduce padding for smaller screens */
+        padding-top: 2rem;
     }
 
     .topics-container {
-        padding: 2rem 1rem; /* Adjust padding */
-        flex-direction: column; /* Stack text and images vertically */
+        padding: 2rem 1rem;
+        flex-direction: column;
     }
 
     .topics-content {
-        flex-direction: column; /* Stack text and images vertically */
+        flex-direction: column;
         text-align: center;
     }
 
     .topics-text {
-        max-width: 100%; /* Ensure text takes full width */
-        margin-right: 0; /* Remove right margin */
-        margin-top: 1rem; /* Adjust margin for smaller screens */
+        max-width: 100%;
+        margin-right: 0;
+        margin-top: 1rem;
     }
 
     .topics-image {
-        margin-top: 2rem; /* Adjust image section margin */
+        margin-top: 2rem;
+        width: 100%;
+        flex-direction: column;
     }
 
     .topics-image img {
-        width: 50px; /* Smaller images for mobile */
+        width: 80%;
+        max-width: 600px;
     }
 
     .topics-image .name-box {
-        width: auto; /* Allow name box to adjust width */
-        padding: 1rem; /* Reduce padding for mobile */
+        width: auto;
+        padding: 1rem;
     }
-   
 
     .topics-text h2 {
-        font-size: 2rem; /* Adjust font size for smaller screens */
-        margin-left:0;
+        font-size: 2rem;
+        margin-left: 0;
     }
 
     .topics-text p {
-        font-size: 0rem; /* Smaller font size for paragraphs */
-        margin-left:0;
-       
-        
+        font-size: 1rem;
+        margin-left: 0;
     }
-
 }
 
 @media (max-width: 480px) {
     .topics-text h2 {
-        font-size: 1.5rem; /* Further reduce header font size */
-        margin-left:0;
+        font-size: 1.5rem;
+        margin-left: 0;
     }
 
     .topics-text p {
-        font-size: 0.8rem; /* Further reduce paragraph font size */
+        font-size: 0.9rem;
         margin-left: 0;
     }
 
     .topics-image img {
-        width: 50px; /* Even smaller images for smaller screens */
+        width: 100%;
+        max-width: 350px;
     }
 }
